@@ -10,11 +10,11 @@ public class Main {
             System.out.println("Месяц "+month+" сумма накоплений равна "+deposit+" рублей");
             deposit=deposit+15000;
 
-        if(deposit>total){
-                System.out.println("Месяц " +(month+1)+
-                        " сумма накоплений равна "+(deposit+(total-deposit))+ " рублей");
+        //if(deposit>total){
+                //System.out.println("Месяц " +(month+1)+
+                      //  " сумма накоплений равна "+(deposit+(total-deposit))+ " рублей");
 
-        }
+       // }
     }
 //Task 2
         System.out.println("Задача № 2");
@@ -67,19 +67,19 @@ public class Main {
 //Task 6
         System.out.println("Задача № 6");
         month1 = 0;
-        percent = 7F / 100;
+        percent = 1.07f;
         deposit1 = 15000;
         int depositTerm = 108;
         while (month1<=depositTerm ) {
             month1++;
-            deposit1 = (int) (deposit1 * (1 + percent));
+            deposit1 = (int) (deposit1 * (percent));
             if (month1 % 6 == 0) {System.out.println("Месяц " + month1 +
                         " сумма накоплений равна " + deposit1 + " рублей");
             }
         }
 //Task 7
         System.out.println("Задача № 7");
-         int ferstDay=2;
+         int ferstDay=4;
          for(int day=ferstDay;day<=31;day+=7) {
     System.out.println("Сегодня "+day+"-е число. Необходимо подготовить отчет");
     }
@@ -89,7 +89,9 @@ public class Main {
         int yearBefore=2024-200;
         int yearAfter=2024+100;
         for(int year=0;year<yearAfter;year+=79) {
-            if(year>yearBefore ) System.out.println(year);
+            if(year>yearBefore ) {
+                System.out.println(year);
+            }
         }
 
 
